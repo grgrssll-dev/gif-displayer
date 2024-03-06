@@ -99,6 +99,17 @@
     font-weight: 400;
 }
 
+@media screen and (max-width: 50rem) {
+    .gif-frames-navigation {
+        gap: 0.5rem;
+    }
+
+    .gif-frames-navigation a {
+        padding: 0.275rem;
+        font-size: 0.75rem;
+    }
+}
+
 .gif-frames-navigation a.active {
     background: #999;
     color: #fff;

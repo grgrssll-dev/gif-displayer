@@ -28,3 +28,13 @@
     font-style: italic;
     margin-left: 0.25rem;
 }
+
+@media screen and (max-width: 50rem) {
+    .image-stat {
+        font-size: 0.875rem;
+    }
+
+    .image-stat em {
+        font-size: 0.75rem;
+    }
+}
