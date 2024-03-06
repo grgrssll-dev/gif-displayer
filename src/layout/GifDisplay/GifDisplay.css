@@ -34,16 +34,20 @@
     flex-grow: 1;
 }
 
-.cell-third {
-    flex-basis: calc(33% - 2rem);
-    flex-grow: 1;
-    background-color: rgba(0, 0, 222, 0.2);
-}
-
 .cell-full {
     flex-basis: 100%;
     flex-grow: 1;
     max-width: 100%;
+}
+
+@media screen and (max-width: 50rem) {
+
+    .cell-full,
+    .cell {
+        flex-basis: 100%;
+        flex-grow: 1;
+        max-width: 100%;
+    }
 }
 
 .gif-section h2 {
