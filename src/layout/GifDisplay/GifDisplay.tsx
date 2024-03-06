@@ -138,24 +138,24 @@ export default function GifDisplay(props: Props) {
                 </div>
                 <div className="cell-full">
                     {gif.extensions.application?.introduction ? (
-                        <Extension type="application" data={gif.extensions.application} />
+                        <Extension key="gif-ext-app" type="application" data={gif.extensions.application} />
                     ) : null}
                     {gif.extensions.text?.introduction ? (
-                        <Extension type="text" data={gif.extensions.text} />
+                        <Extension key="gif-ext-text" type="text" data={gif.extensions.text} />
                     ) : null}
                     {gif.extensions.comment?.introduction ? (
-                        <Extension type="comment" data={gif.extensions.comment} />
+                        <Extension key="gif-ext-com" type="comment" data={gif.extensions.comment} />
                     ) : null}
-                    {gif.frames.map((frame => (
+                    {gif.frames.map(((frame, i) => (
                         <>
                             {frame.extensions.application?.introduction ? (
-                                <Extension type="application" data={frame.extensions.application} />
+                                <Extension key={`frame-ext-${i}-app`} type="application" data={frame.extensions.application} />
                             ) : null}
                             {frame.extensions.text?.introduction ? (
-                                <Extension type="text" data={frame.extensions.text} />
+                                <Extension key={`frame-ext-${i}-text`} type="text" data={frame.extensions.text} />
                             ) : null}
                             {frame.extensions.comment?.introduction ? (
-                                <Extension type="comment" data={frame.extensions.comment} />
+                                <Extension key={`frame-ext-${i}-com`} type="comment" data={frame.extensions.comment} />
                             ) : null}
                         </>
                     )))}
