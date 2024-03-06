@@ -1,0 +1,28 @@
+.gif-preview {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gif-preview canvas {
+    border: 1px #000 solid;
+    background-image: url(data:image/gif;base64,R0lGODlhEAAQAIABAH9/f7OzsywAAAAAEAAQAAACH4xvoKuIzNyBSyYKbMDZcv15HAaSIlWiJ5Sya/RWVgEAOw==);
+}
+
+.gif-preview-controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.gif-preview-position {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #222;
+    width: 3rem;
+}

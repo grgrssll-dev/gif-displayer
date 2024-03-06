@@ -1,0 +1,45 @@
+.gif-frame {
+    width: 90vw;
+    position: relative;
+}
+
+.gif-frame-inner {
+    width: calc(100% - 1rem);
+    border: 1px #999 solid;
+    padding: 1rem;
+}
+
+.gif-frame canvas {
+    margin-right: 2rem;
+}
+
+.gif-frame h3 {
+    margin-top: 0;
+}
+
+.gif-frame h3.gif-frame-number {
+    background: #999;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-decoration: none;
+}
+
+.gif-frame canvas {
+    border: 1px #000 solid;
+    background-image: url(data:image/gif;base64,R0lGODlhEAAQAIABAH9/f7OzsywAAAAAEAAQAAACH4xvoKuIzNyBSyYKbMDZcv15HAaSIlWiJ5Sya/RWVgEAOw==);
+}
+
+.gif-frame p.hex {
+    font-size: 0.75rem;
+    font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    color: #000;
+    margin: 0;
+    white-space: pre-wrap;
+}
